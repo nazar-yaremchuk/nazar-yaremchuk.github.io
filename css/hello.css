@@ -1,0 +1,136 @@
+#s1 {
+    background-color: #EBEBED;
+    padding: 0;
+    justify-content: flex-start;
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+.hello {
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+
+
+/*        flex-direction: column;*/
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.hello svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 77vh;
+    height: 100vh;
+    max-height: 80vh;
+    margin-left: 7vw;
+    z-index: 0;
+    overflow: visible;
+}
+
+.st11 {
+    fill: #3A8A41; -webkit-animation-duration: 2s;
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    animation-duration: 10s;
+    animation: illust ease-in-out 5s infinite;
+}
+
+@-webkit-keyframes illust {
+  10% {
+    -webkit-transform: rotate3d(0, 0, 1, 10deg);
+    transform: rotate3d(0, 0, 1, 10deg);
+  }
+  30% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 10deg);
+    transform: rotate3d(0, 0, 1, 10deg);
+  }
+  90% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+}
+.st11:hover {
+    fill: #BB9478;
+}
+.st1:hover {
+    fill: #BB9478;
+}
+
+
+.hello h1 {
+    position: relative;
+    z-index: 1;
+    width: 65%;
+    color: #111;
+    font-size: 4rem;
+    letter-spacing: .02em;
+    margin-bottom: 60vh;
+}
+
+.s1-text {
+    position: relative;
+    z-index: 1;
+    width: 55%;
+    color: #111;
+    max-width: 200vh;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-transform: lowercase;
+    padding-top: 50vh;
+}
+p.s1-text a.js-scroll{
+    text-decoration: none;
+    color: #111;
+    margin-top: 10vh;
+    }
+p.s1-text a.js-scroll:hover {
+    color: #BB9478;
+}
+
+
+@media screen and (orientation:portrait) {
+    .hello {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 35px;
+    }
+
+    .hello h1,.hello p.s1-text {
+        width: 80%;
+        max-width: 500px;
+        margin-bottom: 0.4em;
+        padding-top: 0.7vh;
+        }
+    p.s1-text{
+        font-size: 1.5rem;
+        line-height: 1.2;
+
+
+    }
+
+    .hello svg {
+        width: 80%;
+        height: auto;
+        max-height: none;
+        /*    margin-left: 1vw;*/
+        z-index: 0;
+        margin-left: 10vw;
+
+    }
+}

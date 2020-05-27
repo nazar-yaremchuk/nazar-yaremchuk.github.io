@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    font-size: 17px;
+font-family: "Inter";
+    font-weight: 500;
+}
+
+header {
+    background-color: #1D1D1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 25px;
+    }
+
+header .svg-box {
+    width: 100%;
+    max-width: 750px;
+    }
+
+.svg-box img {
+    display: block;
+    width: 100%;
+    }
+
+header .button {
+    background-color: #EBEBED;
+    border-radius: 2.9em;
+    max-width: 350px;
+    padding: .3em;
+    margin-top: 25px;
+    font-size: 1.4rem;
+
+
+    }
+
+header .button a {
+    background-color: #EBEBED;
+    display: block;
+    border: 6px solid #3A8A41;
+    border-radius: 5em;
+    color: #1D1D1B;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .02em;
+    padding: .5em 1em;
+/*    letter-spacing: .03em;*/
+    font-weight: 500;
+
+    }
+
+header .button a:hover {
+    border-color: #BB9478;
+}
+
+#top .hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    line-height: 0.1;
+    min-height: 0;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+@media screen and (orientation:portrait) {
+    header .svg-box {
+    width: 100%;
+    max-width: 750px;
+    }
+ header .button {
+    font-size: 1rem;
+
+    }
+    header .button a {
+            font-weight: 600;
+
+    }
+   
+}
+

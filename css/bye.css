@@ -1,0 +1,107 @@
+#s6 {
+    /*    background-color: #ebebed;*/
+    background-color: #1D1D1B;
+    color: #EBEBED;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px;
+    position: relative;
+}
+
+.byepic {
+    width: 100%;
+}
+
+h1.quote {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10vh;
+    font-size: 2.8vw;
+    line-height: 1.4;
+}
+
+.bye h2 {
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #EBEBED;
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 400;
+
+}
+
+.pic .st2 {
+    transition: fill 300ms ease;
+    
+}
+
+.st3:hover {
+    fill: #3A8A41;
+}
+
+.share {
+    letter-spacing: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 25vw;
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.share .link {
+    background-color: #BB9478;
+/*    border-radius: 8px;*/
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    position: relative;
+}
+.share .link:hover {
+    background-color: #3A8A41;
+}
+
+.share .link:after {
+    content:"";
+    position: absolute;
+    left:7px; top:7px; 
+    width: 25px;
+    height:25px;
+    display: block;
+}
+
+.share .fb:after {
+    background: url("https://i.imgur.com/u9gLigk.png") 50% 50% no-repeat;
+    background-size: contain;
+    }
+.share .tw:after {
+    background: url("https://i.imgur.com/QzPDsIB.png") 50% 50% no-repeat;
+    background-size: contain;
+    }
+
+
+@media screen and (max-width:767px),
+@media screen and (orientation:portrait) {
+
+    #s6 {
+        padding: 25px;
+    }
+
+    .bye h2 {
+        font-size: 20px;
+    }
+
+    h1.quote {
+        font-size: 25px;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width:767px) {
+    .share {
+        display:none;
+    }
+}
